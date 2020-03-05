@@ -2,6 +2,16 @@
 
 {% block content %}
 
+  <div class='graph'>
+    <form method='post'>
 
+      {% csrf_token %}
+
+      {{ register_form.as_p }}
+
+      <button type="submit"> Register </button>
+
+    </form>
+  </div>
 
 {% endblock %}
